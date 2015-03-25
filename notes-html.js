@@ -93,7 +93,7 @@ function addH1(string, item) {
 
 function getBibtex(item) {
     // Get the bibtex ID
-    var patt = /(?:bibtex:)(\S+)/i;
+    var patt = /(?:bibtex: )(\S+)/i;
     var match = patt.exec(item.extra);
     var bibtexid = null;
     if(match) {
